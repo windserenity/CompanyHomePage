@@ -1,48 +1,131 @@
+/* Root Varibales  */
+:root {
+    --col-red: #D95E52;
+    --col-organge:#F2884B;
+    --col-blue-light: #025373;
+    --col-blue-main: #012340;
+}
+
 /* Global */
 * {
     font-size: 16px;
+   
 }
+
 
 body {
     width: 100%;
+    background-color: aliceblue;
 }
 
 /* Header */
-
-nav {
-    padding: 10px 30px;
-    box-shadow: 0 1px 8px #ddd;
-
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center
+    
+    
 }
-
-nav ul {
-    align-items: center;
-      
+.nav-list {
+    list-style: none;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-family: Unica One;
+    align-content: center;
+    
+    
 }
-
-/* nav li .logo{
-    height: auto;
-    width: 170px; 
-   
- } */
-
-nav li {
-    padding: 0 40px;
-    font-family:Unica One;
-    font-size: 1.5rem;   
+    
+.nav-item{
+    margin-right: 2rem;
+    display: inline-block;
 }
+.logo{
+    width: auto;
+    height: 170px;
+    cursor: pointer;
 
+} 
 nav a {
-    color: #3C5973;
+    color: var(--col-blue-main);
     transition: all 0.3s ease 0s;
 }
 nav a:hover {
-    color: #b2dfdb;
+    color: var(--col-red);
 }
 
-/*
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: var(--col-blue-light);
+    margin: 5px
+}
+.burger{
+    align-content: center;
+    padding: 3.5rem 2rem ;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:743px) {
+    .resize-animation-stopper * {
+        animation: none !important;
+        transition: none !important;
+      }
+    
+   body{
+    overflow-X: hidden;
+   }
+    .nav-list{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 12vh;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+   }
+   .nav-item{
+    margin-bottom: 2rem;
+
+    
+   }
+  .burger{
+    display: block;
+    z-index: 1;
+  }
+} 
+
+.nav-active{
+    transform: translateX(0);  
+   
+}
+@media screen and (min-width:996px){ /*make nav slide out  */
+    .nav-item{
+        margin-right: 4rem;
+        display: inline-block;
+        transition: 0.5s ease-in;
+    }
+
+}
+@media screen and (max-width:995px){ /*make nav slide in  */
+    .nav-item{
+        margin-right: 2rem;
+        display: inline-block;
+        transition: 0.5s ease-in;
+    }
+
+}
+/* Hero Image */
 .image-container{
     background-image: url(/resources/img/hero-bannner.jpeg);   
+    z-index: -1;
     height: 40rem;
     background-position: center; 
     background-repeat: no-repeat;
@@ -58,10 +141,16 @@ nav a:hover {
     color: white;
     height: auto;
     margin-top: 200px;
+    font-family: Unica One;
+    font-weight: bold;
+    
+    padding: 3rem 0 3.5rem 0;
 }
 
 .inner-container h1{
     font-size: 7em;
+    padding-bottom: 1rem;
+
 
 }
 
@@ -69,6 +158,7 @@ nav a:hover {
     margin-top: -17px;
     font-size: 1.7em;
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .inner-container a{
@@ -91,8 +181,9 @@ nav a:hover {
 }
     .btn:hover, .btn:active {
     background-color: #fff;
-    color: #000;
+    color: var(--col-red);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-*/
+/* Locations */
+
