@@ -91,7 +91,8 @@ nav a:hover {
     transition: transform 0.5s ease-in-out;
    }
    .nav-item{
-    margin-bottom: 2rem;
+    /* margin-bottom: 3rem; */
+    padding-top: 6rem;
 
     
    }
