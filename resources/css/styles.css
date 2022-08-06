@@ -185,4 +185,47 @@ nav a:hover {
 }
 
 /* Locations */
+.destenations{
+    max-width: 110%;
+    margin: 100px auto;
+    padding: 0 20px;
 
+}
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location{
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items:center; 
+}
+
+.discription{
+    background-color: fade(#F2884B, 50%);
+    width: 100%;
+    max-height: 30px;
+    margin: 0%;
+    padding: 2rem 2rem;
+    
+}
+
+#nz{
+    background-image: url("../img/train-mountain.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+
+}
+
+#africa{
+    background-image: url("../img/jungle.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
