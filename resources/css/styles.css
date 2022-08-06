@@ -186,33 +186,47 @@ nav a:hover {
 
 /* Locations */
 .destenations{
-    max-width: 110%;
-    margin: 100px auto;
-    padding: 0 20px;
+    max-width: 100%;
+    /* margin: 10px auto; */
+    /* padding: 0 20px; */
+    font-family: Unica One;
 
 }
-
+.destenations #title{
+    font-size: 3em;
+    background-color: var(--col-blue-main);
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 .locations{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 3rem 0 3rem;
 }
 
 .location{
     width: 300px;
     min-height: 300px;
     display: flex;
-    align-items:center; 
+    align-items:flex-end; 
+    margin: 0.1rem;
 }
 
 .discription{
-    background-color: fade(#F2884B, 50%);
+    background-color: rgba(1, 35, 64, .80);
+    color: rgb(255, 255, 255);
     width: 100%;
     max-height: 30px;
     margin: 0%;
     padding: 2rem 2rem;
-    
 }
-
+.discription h2{
+    font-size: 2rem;
+}
 #nz{
     background-image: url("../img/train-mountain.jpeg");
     background-repeat: no-repeat;
@@ -229,3 +243,20 @@ nav a:hover {
     background-size: cover;
     flex-grow: 5;
 }
+
+#europe{
+    background-image: url("../img/boat.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#india{
+    background-image: url("../img/sylwia-bartyzel-eU4pipU_8HA-unsplash.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
