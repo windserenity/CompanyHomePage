@@ -196,7 +196,7 @@ nav a:hover {
     background-color: var(--col-red);
     color: white;
     max-width: 265px;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
     text-align: center;
@@ -208,6 +208,17 @@ nav a:hover {
     margin: 0 3rem 0 3rem;
 }
 
+.location:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+.discription:hover{
+    cursor: pointer;
+}
+
+.discription:active{
+    background-color: #D95E52;   
+}
 .location{
     width: 300px;
     min-height: 300px;
@@ -233,7 +244,6 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-
 }
 
 #africa{
@@ -271,7 +281,7 @@ nav a:hover {
     font-size: 3em;
     background-color: var(--col-organge);
     color: white;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     margin-right: 3.1rem;
     text-align: center;
@@ -282,6 +292,13 @@ nav a:hover {
  #employees{
     /* background-color: rgba(242, 136, 75, 0.80); */
     background-color: rgba(1, 35, 64, .80);
+}
+#employees:hover{
+    cursor: pointer;
+}
+
+#employees:active{
+    background-color: var(--col-organge);   
 }
 
 
@@ -312,4 +329,80 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     flex-grow: 2;
+}
+
+/* About us */
+
+.banner {
+    background-color: var(--col-light-orange);
+    margin-top: 3rem;
+    font-family: Unica one;
+    color: #fff;
+    padding: 4rem;
+}
+
+.statment h3{
+    font-size: 2rem;
+}
+
+.statment p{ 
+   font-size: 4rem;
+}
+
+/* Footer Bread Crumb */
+.bread-crumbs{
+    display: flex;
+    font-family: Unica one;
+    font-size: 4rem;
+    margin-top: 3rem;
+    flex-flow: row wrap;
+}
+
+.top{
+    background-color: #F2B263;
+    padding: 2rem;
+    flex: 3 auto;
+    color: #fff;
+}
+
+.top:hover{
+    background-color:  #f1c083;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+.top:active{
+    color: var(--col-red);
+    transition: color 0.1s ease-in;
+}
+
+.book{
+    background-color: var(--col-red);
+    padding: 2rem;
+    flex: 1 auto;
+    color: #fff;
+}
+.book:hover{
+    background-color:  #d66e64;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+.book:active{
+    color: var(--col-light-orange);
+    transition: color 0.1s ease-in;
+}
+
+.discover{
+    background-color: var(--col-organge);
+    padding: 2rem;
+    flex: 1 auto;
+    color: #fff;
+}
+.discover:hover{
+    background-color:  #f2955f;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+.discover:active{
+    color: var(--col-blue-light);
+    transition: color 0.1s ease-in;
 }
