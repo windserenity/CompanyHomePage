@@ -406,3 +406,37 @@ nav a:hover {
     color: var(--col-blue-light);
     transition: color 0.1s ease-in;
 }
+
+/* Footer Contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.map {
+    background-image: url("../img/Screen\ Shot\ 2022-08-06\ at\ 11.29.38\ PM.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    height: 500px;
+}
+
+.map h2 {
+    background-color: var(--col-blue-main);
+    color: white;
+    font-size: 3rem;
+    font-family: Unica one; 
+    padding: 1rem 0 1rem 1rem;
+}
+
+.info {
+    background-color: var(--col-blue-main);
+    color: white;
+    font-size: 1rem;
+    font-family: Unica one; 
+    padding: 1rem 0 1rem 1rem;
+    text-align: center;
+}
