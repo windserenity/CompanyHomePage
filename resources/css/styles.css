@@ -2,18 +2,17 @@
 :root {
     --col-red: #D95E52;
     --col-organge:#F2884B;
+    --col-light-orange:#F2B263;
     --col-blue-light: #025373;
     --col-blue-main: #012340;
 }
 
 /* Global */
 * {
-    font-size: 16px;
-   
+    font-size: 16px;  
 }
 body {
     width: 100%;
-    background-color: aliceblue;
 }
 
 /* Header */
@@ -194,12 +193,13 @@ nav a:hover {
 }
 .destenations #title{
     font-size: 3em;
-    background-color: var(--col-blue-main);
+    background-color: var(--col-red);
     color: white;
-    text-align: center;
+    max-width: 265px;
     margin-top: 5rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    text-align: center;
 }
 .locations{
     display: flex;
@@ -213,7 +213,7 @@ nav a:hover {
     min-height: 300px;
     display: flex;
     align-items:flex-end; 
-    margin: 0.1rem;
+    margin: 0.1rem 0.1rem 0.1rem 0;
 }
 
 .discription{
@@ -260,3 +260,56 @@ nav a:hover {
     flex-grow: 1;
 }
 
+/* Staff */
+.staff{
+    max-width: 100%;
+    font-family: Unica One;
+    display: flex;
+    flex-direction: column;
+}
+.staff #title{
+    font-size: 3em;
+    background-color: var(--col-organge);
+    color: white;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3.1rem;
+    text-align: center;
+    align-self: flex-end;  
+    padding: 0 10px 0 10px;
+}
+
+ #employees{
+    /* background-color: rgba(242, 136, 75, 0.80); */
+    background-color: rgba(1, 35, 64, .80);
+}
+
+
+#derek{
+    background-image: url("../img/derek.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;  
+}
+#jessica{
+    background-image: url("../img/team1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+}
+#sirya{
+    background-image: url("../img/mustafa-omar.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+#joe{
+    background-image: url("../img/joseph-gonzalez-iFgRcqHznqg-unsplash.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+}
